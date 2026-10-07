@@ -1,0 +1,11 @@
+Signa-Word V3.1-AI-Quant-Foundation
+- 项目定位正式从事件驱动分析升级为 A 股 AI 量化研究与选股系统
+- 量化作为一级核心架构，与 Market / News / NLP / Event / Name Resonance 并列
+- 新增 Quant Core：交易规则、point-in-time 特征、Alpha V0、基础回测
+- 新增历史行情入口与 Point-in-Time supervised dataset 构建
+- 新增可选 LightGBM 训练入口与时间序列切分
+- 新增可选 Qlib Adapter，支持后续 AI Alpha / Model / Portfolio / Backtest 工作流
+- NLP / 事件抽取 / 名称共振定位为 AI Quant Feature / Alpha 来源
+- 不生成虚假训练结果，不伪造历史行情，不使用未来数据生成当前信号
+- 保留真实新浪实时行情与真实东方财富概念数据链
+- 概念采用按需真实拉取与缓存，不恢复启动时 375 个概念全量抓取

@@ -1,0 +1,6 @@
+"use strict"
+[
+  { "keyword": "人工智能", "statDate": "2026-08-01", "mentions": 1234, "score": 9.5 },
+  { "keyword": "区块链", "statDate": "2026-08-01", "mentions": 876, "score": 7.2 },
+  { "keyword": "新能源", "statDate": "2026-08-01", "mentions": 2345, "score": 8.1 }
+]

@@ -1,0 +1,5 @@
+# Optional AI-quant layer. Core V3.1 runs without these packages.
+# Qlib supplies the broader AI-quant workflow: data, alpha, model, portfolio and backtest.
+pyqlib
+# LightGBM is the first supervised-learning baseline used by Signa-Word.
+lightgbm

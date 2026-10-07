@@ -1,0 +1,4 @@
+akshare>=1.18.94
+flask>=2.3.0
+pandas>=2.0.0
+packaging>=23.0
