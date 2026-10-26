@@ -1,8 +1,8 @@
-﻿import axios from 'axios'
+import axios from 'axios'
 
 const api = axios.create({
   baseURL: '/',
-  timeout: 10000,
+  timeout: 30000,
 })
 
 export const getQuantHealth = () =>
@@ -10,6 +10,19 @@ export const getQuantHealth = () =>
 
 export const getRealtimeStatus = () =>
   api.get('/bridge/health')
+
+export const getRealtimeStocks = () =>
+  api.get('/bridge/api/stocks/realtime')
+
+export const getStockHistory = (
+  code: string,
+  startDate: string,
+  endDate: string,
+  adjust = 'qfq',
+) =>
+  api.get('/api/quant/history', {
+    params: { code, startDate, endDate, adjust },
+  })
 
 export const getFeatures = (code: string) =>
   api.get('/api/quant/features', {
